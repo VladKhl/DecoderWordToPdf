@@ -64,5 +64,10 @@ namespace DecoderWordToPdf
                 MessageBox.Show("Successfull");
             }
         }
+
+        private void CopyToBase64Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
