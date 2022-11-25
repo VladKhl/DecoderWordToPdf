@@ -53,5 +53,16 @@
             Background="Black"
             Foreground="White"
             Margin="400,0,0,0" />
+        <Button
+            x:Name="CopyToBase64Btn"
+            Content="Download PDF file"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Height="30"
+            Click="DownloadPDFBtn_Click"
+            Width="100"
+            Background="Black"
+            Foreground="White"
+            Margin="400,0,0,0" />
     </Grid>
 </Window>

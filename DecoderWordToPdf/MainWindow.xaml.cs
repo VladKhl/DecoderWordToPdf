@@ -1,23 +1,9 @@
 ﻿using Microsoft.Office.Interop.Word;
 using Microsoft.Win32;
-using Spire.Doc;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace DecoderWordToPdf
 {
@@ -28,12 +14,10 @@ namespace DecoderWordToPdf
     {
         //Document readyDOC;
         string directory;
-        public Microsoft.Office.Interop.Word.Document wordDocument { get; set; }
+        public Document wordDocument { get; set; }
         public MainWindow()
         {
-            InitializeComponent();
-            
-            
+            InitializeComponent();   
         }
 
         private void UpLoadWordBtn_Click(object sender, RoutedEventArgs e)
