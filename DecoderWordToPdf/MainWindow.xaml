@@ -1,0 +1,57 @@
+﻿<Window
+    x:Class="DecoderWordToPdf.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:DecoderWordToPdf"
+    mc:Ignorable="d"
+    Title="MainWindow"
+    Height="450"
+    Width="800">
+    <Grid>
+        <Button
+            x:Name="UpLoadWordBtn"
+            Content="Upload Word-file"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Height="30"
+            Click="UpLoadWordBtn_Click"
+            Width="100"
+            Background="Black"
+            Foreground="White"
+            Margin="100,0,0,0" />
+        <StackPanel
+            Orientation="Vertical"
+            Margin="220,0,480,0"
+            VerticalAlignment="Center">
+            <TextBlock
+                x:Name="uploadnametb"
+                Visibility="Collapsed"
+                TextAlignment="Center"
+                TextWrapping="Wrap" />
+            <ProgressBar
+                x:Name="uploadpb"
+                Visibility="Collapsed"
+                Orientation="Horizontal"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Maximum="10"
+                Minimum="0"
+                Value="0"
+                Height="15"
+                Width="100" />
+        </StackPanel>
+        <Button
+            x:Name="DownloadPDFBtn"
+            Content="Download PDF file"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Height="30"
+            Click="DownloadPDFBtn_Click"
+            Width="100"
+            Background="Black"
+            Foreground="White"
+            Margin="400,0,0,0" />
+    </Grid>
+</Window>
