@@ -1,6 +1,5 @@
 ﻿using Microsoft.Office.Interop.Word;
 using Microsoft.Win32;
-using Spire.Doc;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
